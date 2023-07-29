@@ -1524,3 +1524,15 @@ h6 {
     line-height: 1.5 !important;
     padding: 0.375rem 0 !important;
 }
+.tbl-top-txt span {
+    padding-right: 10px;
+    font-weight: 600;
+}
+.btn-input {
+    font-size: 11px;
+    padding: 0 10px;
+}
+.copyright {
+    color: white;
+    letter-spacing: 1px;
+}
