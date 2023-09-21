@@ -2064,6 +2064,12 @@ class CustVarianceComponent {
             mcsubprdcd = var2;
             mcpacktype = var3;
           }
+          console.log("rvaluevar value--", rvaluevar);
+          console.log("Region selected value--", this.custVarianceForm.get('mcGeography')?.value);
+          if (rvaluevar != this.custVarianceForm.get('mcGeography')?.value) {
+            rtypevar = "R";
+            rvaluevar = this.custVarianceForm.get('mcGeography')?.value;
+          }
           var ALLSTR = "&tprType=" + rtypevar + "&tprValue=" + rvaluevar + "&tPprod=" + tcprodcode + "&tfmthyr=" + this.custVarianceForm.get('mcFromMonth')?.value + "&tftmthyr=" + this.custVarianceForm.get('mcToMonth')?.value + "&tcmthyr=" + this.custVarianceForm.get('mcFromMonthC')?.value + "&tctmthyr=" + this.custVarianceForm.get('mcToMonthC')?.value + "&ttorder=" + this.custVarianceForm.get('mcEvaluateU')?.value + "&tvarlimit=" + this.custVarianceForm.get('mcVariance')?.value + "&tdlimit=" + this.custVarianceForm.get('mcDisLimit')?.value + "&tfsflg=" + this.custVarianceForm.get('mcWithPS')?.value + "&tdataflg=" + this.custVarianceForm.get('mcDataMeasure')?.value + "&tpCsubprdcd=" + mcsubprdcd + "&tpCpacktype=" + mcpacktype + "&tcustflg=" + '';
           console.log(ALLSTR);
           var baseUrl = "";
